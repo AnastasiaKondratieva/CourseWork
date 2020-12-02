@@ -1,0 +1,9 @@
+import requests
+from bs4 import BeautifulSoup
+
+url = 'https://pogoda1.ru/yekaterinburg/temperatura-vody/'
+response = requests.get(url)
+soup = BeautifulSoup(response.text, 'lxml')
+quotes = soup.find_all('div', class_='x-cell x-cell-water-temp')
+for quote in quotes:
+    print('температура воды', quote.text, '°C')
