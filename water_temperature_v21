@@ -1,0 +1,43 @@
+import requests
+from bs4 import BeautifulSoup
+import datetime
+
+
+def last_day_of_month(any_day):
+    next_month = any_day.replace(day=28) + datetime.timedelta(days=4)
+    return next_month - datetime.timedelta(days=next_month.day)
+
+
+res = requests.get('https://pogoda1.ru/katalog/sverdlovsk-oblast/temperatura-vody/')
+soup = BeautifulSoup(res.content, 'html.parser')
+temp_dict = []
+for table in soup.select('.x-table > .x-row'):
+    temp_dict.append([])
+    temperature = table.select_one('.x-cell-water-temp').get_text(strip=True)
+    links = [a for a in table.select('.x-cell > .link')]
+    name = links[0].text
+    temperature = float(temperature)
+    temp_dict[-1].append(temperature)
+    temp_dict[-1].append(name)
+average_temperature = 0
+for i in range(len(temp_dict)):
+    average_temperature += temp_dict[i][0]
+average_temperature = average_temperature / len(temp_dict)
+month = (datetime.date.today().strftime('%B'))
+day = (datetime.date.today().strftime('%d'))
+number_month = int(datetime.date.today().strftime('%m'))
+count_day_month = last_day_of_month(datetime.date(2020, number_month, 1))
+average_temperature_month = 0
+f = open('Temperature.txt', 'a+')
+f.write(day + ' of ' + month + ': ' + str(round(average_temperature, 2)) + '\n')
+if count_day_month == day:
+    count = 1
+    f.seek(0)
+    if i in range(len(f)):
+        count += 1
+    number = i.split()
+    average_temperature_month += float(number)
+    average_temperature_month = average_temperature_month / count
+    print(round(average_temperature_month))
+    f.write((average_temperature_month))
+f.close()
