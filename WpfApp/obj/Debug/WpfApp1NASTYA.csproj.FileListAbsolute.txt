@@ -1,0 +1,15 @@
+C:\GitHub\CourseWork\Настя\Практика Осипов\WpfApp1NASTYA\obj\Debug\WpfApp1NASTYA.csprojAssemblyReference.cache
+C:\GitHub\CourseWork\Настя\Практика Осипов\WpfApp1NASTYA\obj\Debug\MainWindow.g.cs
+C:\GitHub\CourseWork\Настя\Практика Осипов\WpfApp1NASTYA\obj\Debug\App.g.cs
+C:\GitHub\CourseWork\Настя\Практика Осипов\WpfApp1NASTYA\obj\Debug\WpfApp1NASTYA_MarkupCompile.cache
+C:\GitHub\CourseWork\Настя\Практика Осипов\WpfApp1NASTYA\obj\Debug\WpfApp1NASTYA_MarkupCompile.lref
+C:\GitHub\CourseWork\Настя\Практика Осипов\WpfApp1NASTYA\bin\Debug\WpfApp1NASTYA.exe.config
+C:\GitHub\CourseWork\Настя\Практика Осипов\WpfApp1NASTYA\bin\Debug\WpfApp1NASTYA.exe
+C:\GitHub\CourseWork\Настя\Практика Осипов\WpfApp1NASTYA\bin\Debug\WpfApp1NASTYA.pdb
+C:\GitHub\CourseWork\Настя\Практика Осипов\WpfApp1NASTYA\obj\Debug\MainWindow.baml
+C:\GitHub\CourseWork\Настя\Практика Осипов\WpfApp1NASTYA\obj\Debug\WpfApp1NASTYA.g.resources
+C:\GitHub\CourseWork\Настя\Практика Осипов\WpfApp1NASTYA\obj\Debug\WpfApp1NASTYA.Properties.Resources.resources
+C:\GitHub\CourseWork\Настя\Практика Осипов\WpfApp1NASTYA\obj\Debug\WpfApp1NASTYA.csproj.GenerateResource.cache
+C:\GitHub\CourseWork\Настя\Практика Осипов\WpfApp1NASTYA\obj\Debug\WpfApp1NASTYA.csproj.CoreCompileInputs.cache
+C:\GitHub\CourseWork\Настя\Практика Осипов\WpfApp1NASTYA\obj\Debug\WpfApp1NASTYA.exe
+C:\GitHub\CourseWork\Настя\Практика Осипов\WpfApp1NASTYA\obj\Debug\WpfApp1NASTYA.pdb

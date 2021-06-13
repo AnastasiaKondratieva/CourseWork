@@ -1,0 +1,35 @@
+﻿<Window x:Class="WpfApp1NASTYA.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1NASTYA"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="294*"></RowDefinition>
+            <RowDefinition Height="125*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <TextBlock Grid.Row="1" Margin="114,10,114,0" TextWrapping="Wrap" Text="Данные:" VerticalAlignment="Top" FontWeight="Bold" FontSize="20" Height="26" RenderTransformOrigin="0.866,0.704" HorizontalAlignment="Center">
+            
+        </TextBlock>
+        <Button Grid.Row="1" Content="Start" Margin="45,0,37,45" FontWeight="Bold" FontSize="18" Height="30" VerticalAlignment="Bottom" Click="Button_Click" Grid.Column="1">
+            <Button.Effect>
+                <DropShadowEffect></DropShadowEffect>
+            </Button.Effect>
+        </Button>
+        <TextBox x:Name="speed" Grid.Row="1" Height="16" Margin="100,51,10,0" TextWrapping="Wrap"  VerticalAlignment="Top" RenderTransformOrigin="0.275,0.072"/>
+        <TextBlock Grid.Row="1" Margin="20,52,324,0" TextWrapping="Wrap" Text="Speed:" VerticalAlignment="Top" Height="15"/>
+        <TextBlock Grid.Row="1" Margin="20,74,325,0" TextWrapping="Wrap" Text="Аngle:" VerticalAlignment="Top" Height="18"/>
+        <TextBox x:Name="angle" Grid.Row="1" Height="16" Margin="100,75,10,0" TextWrapping="Wrap"  VerticalAlignment="Top"/>
+        <Canvas x:Name="canvas" Grid.Row="0"  Grid.Column="0" Grid.ColumnSpan="2">
+            <Polyline x:Name="poliline" Stroke="Black" StrokeThickness="4" Points=""/>
+            <Ellipse x:Name="ellipse" Fill="White" Width="20" Height="20"></Ellipse>
+        </Canvas>
+    </Grid>
+</Window>
